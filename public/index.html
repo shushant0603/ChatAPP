@@ -19,7 +19,7 @@
         .chat {
             width: 100%;
             height: 100vh;
-            background-color: aqua;
+            /* background-color: rgb(194, 210, 210); */
             position: relative;
         }
 
@@ -29,7 +29,7 @@
             padding: 10px;
         }
 
-        #username-section {
+        /* #username-section {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,17 +43,17 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             padding: 20px;
-        }
-
+        } */
+        /* 
         #username {
             width: 70%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             margin-right: 10px;
-        }
+        } */
 
-        #register-btn {
+        /* #register-btn {
             padding: 10px 20px;
             background-color: #007bff;
             color: white;
@@ -61,50 +61,55 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
-        }
-
+        } */
+        /* 
         #register-btn:hover {
             background-color: #0056b3;
-        }
+        } */
 
         #user-list-section {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15%;
-    height: 100%;
-    background-color: #f1f1f1;
-    border-right: 1px solid #ccc;
-    padding: 20px;
-    overflow-y: auto;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15%;
+            height: 100%;
+            background-color: #f1f1f1;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
 
-#user-list-section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
+        #user-list-section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
 
-#user-list {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-}
+        #user-list {
+            list-style-type: none;
+            /* Remove default list styling */
+            padding: 0;
+            /* Remove default padding */
+        }
 
-#user-list li {
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #ffffff;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    cursor: pointer;
-}
+        #user-list li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
 
-#user-list li:hover {
-    background-color: #007bff; /* Change background on hover */
-    color: white; /* Change text color on hover */
-    transform: scale(1.02); /* Slightly enlarge on hover */
-}
+        #user-list li:hover {
+            background-color: #007bff;
+            /* Change background on hover */
+            color: white;
+            /* Change text color on hover */
+            transform: scale(1.02);
+            /* Slightly enlarge on hover */
+        }
 
         #chat-container {
             position: absolute;
@@ -129,26 +134,28 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
-        .chat-box{
+
+        .chat-box {
             height: 90vh;
             width: 100vw;
             margin-top: 50px;
             /* background: #000; */
         }
-        #chat-boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    /* width: fit-content; */
-    color: #777;
-    font-size: 18px;
-    /* text-align: center; */
-}
 
-#no-chats {
-    margin-top: 50px;
-}
+        #chat-boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            /* width: fit-content; */
+            color: #777;
+            font-size: 18px;
+            /* text-align: center; */
+        }
+
+        #no-chats {
+            margin-top: 50px;
+        }
 
         .messages {
             height: calc(100% - 120px);
@@ -162,19 +169,21 @@
 
         .message {
             font-size: 16px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    width:fit-content ; /* Content ke hisaab se adjust hone ke liye */
-    word-wrap: break-word;
-    overflow-wrap: break-word; /* Long words wrap karne ke liye */
-    background-color: #f1f1f1;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            width: fit-content;
+            /* Content ke hisaab se adjust hone ke liye */
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            /* Long words wrap karne ke liye */
+            background-color: #f1f1f1;
         }
 
         .message.sent {
             background-color: #007bff;
             color: white;
-            
+
             text-align: end;
             margin-left: auto;
         }
@@ -182,7 +191,7 @@
         .message.received {
             background-color: #80d370;
             color: black;
-            text-align:start;
+            text-align: start;
             margin-right: auto;
         }
 
@@ -221,15 +230,162 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        .firstPage {
+            background: linear-gradient(#1B1336, #4D389C);
+            /* opacity: 70%; */
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            /* align-items: center; Vertically center the content in each row */
+
+        }
+
+        .image {
+            /* align-items: center; */
+            margin-top: 5%;
+            height: 80%;
+            width: 50%;
+            /* background: #000; */
+            opacity: 0;
+            /* Initial state */
+            animation: fadeIn 3s ease-in-out forwards,
+                sway 4s ease-in-out 2.5s infinite;
+            ;
+            /* animation: sway 4s infinite ease-in-out; Apply the animation */
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                /* Start with opacity 0 */
+                transform: translateY(-100%);
+                /* Start above the screen */
+            }
+
+            to {
+                opacity: 1;
+                /* End with opacity 1 */
+                transform: translateY(0);
+                /* Move to final position */
+            }
+        }
+
+        @keyframes sway {
+            0% {
+                transform: translatey(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+        .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #username-section {
+    position: absolute;
+    top: 28%;
+    right: 10%;
+    height: 40vh;
+    width: 30vw;
+    border-radius: 2rem;
+    background: #F7F6FB;
+    box-shadow: 0px 20px 30px rgba(12, 11, 12, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+
+#username-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+#username-section h1 {
+    text-align: center;
+    padding: 10px;
+    color: #4D389C;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#username {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #4D389C;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#username:focus {
+    border-color: #80d370;
+}
+
+#register-btn {
+    padding: 12px 30px;
+    background-color: #4D389C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#register-btn:hover {
+    background-color: #3A2A7A;
+    transform: scale(1.05);
+}
     </style>
 </head>
 
 <body>
     <div class="chat">
-        <h1>Chat App</h1>
-        <div id="username-section">
-            <input type="text" id="username" placeholder="Enter username">
-            <button id="register-btn">Register</button>
+        <!-- <h1>Chat App</h1> -->
+
+
+        <div class="firstPage">
+            <div class="image">
+                <img src="rb_82250.png" alt="">
+            </div>
+            <div id="username-section">
+                <h1>Register</h1>
+                <input type="text" id="username" placeholder="Enter Name">
+                <button id="register-btn">Chat</button>
+            </div>
         </div>
         <div id="user-list-section" style="display:none;">
             <h3 id="registered-username" style="color: #333; margin-bottom: 15px;"></h3>
@@ -239,7 +395,8 @@
 
         <div id="chat-container" class="chat-container" style="display:none;">
             <div id="chat-boxes">
-                <div id="no-chats" style="display: block; text-align: center; margin-top: 50px; font-size: 18px; color: #777;">
+                <div id="no-chats"
+                    style="display: block; text-align: center; margin-top: 50px; font-size: 18px; color: #777;">
                     No active chats. Click on a user to start chatting!
                 </div>
             </div>
@@ -263,10 +420,11 @@
             if (username) {
                 socket.emit('register-user', username);
                 document.getElementById('username-section').style.display = 'none';
+                document.querySelector('.firstPage').style.display = 'none';
                 userListSection.style.display = 'block';
                 chatContainer.style.display = 'block';
                 document.getElementById('registered-username').innerText = `Logged in as: ${username}`;
-            
+
             }
         });
 
@@ -285,27 +443,27 @@
         });
 
         function openChat(user) {
-    // Hide all chat boxes
-    const allChatBoxes = document.querySelectorAll('.chat-box');
-    allChatBoxes.forEach(box => {
-        box.style.display = 'none';
-    });
+            // Hide all chat boxes
+            const allChatBoxes = document.querySelectorAll('.chat-box');
+            allChatBoxes.forEach(box => {
+                box.style.display = 'none';
+            });
 
-    // Show the no-chats message if there are no chat boxes
-    const noChatsMessage = document.getElementById('no-chats');
-    if (allChatBoxes.length === 0) {
-        noChatsMessage.style.display = 'block';
-    } else {
-        noChatsMessage.style.display = 'none';
-    }
+            // Show the no-chats message if there are no chat boxes
+            const noChatsMessage = document.getElementById('no-chats');
+            if (allChatBoxes.length === 0) {
+                noChatsMessage.style.display = 'block';
+            } else {
+                noChatsMessage.style.display = 'none';
+            }
 
-    // Show the selected chat box
-    let chatBox = document.getElementById(`chat-box-${user}`);
-    if (!chatBox) {
-        chatBox = document.createElement('div');
-        chatBox.id = `chat-box-${user}`;
-        chatBox.classList.add('chat-box');
-        chatBox.innerHTML = `
+            // Show the selected chat box
+            let chatBox = document.getElementById(`chat-box-${user}`);
+            if (!chatBox) {
+                chatBox = document.createElement('div');
+                chatBox.id = `chat-box-${user}`;
+                chatBox.classList.add('chat-box');
+                chatBox.innerHTML = `
             <h2 class="header">Chat with:${user}</h2>
             <div class="messages"></div>
             <div class="bottom">
@@ -313,13 +471,13 @@
                 <button onclick="sendMessage('${user}')">Send</button>
             </div>
         `;
-        chatBoxes.appendChild(chatBox);
-    }
+                chatBoxes.appendChild(chatBox);
+            }
 
-   // Display the chat box
-   chatBox.style.display = 'block';
-    noChatsMessage.style.display = 'none';
-}
+            // Display the chat box
+            chatBox.style.display = 'block';
+            noChatsMessage.style.display = 'none';
+        }
         function sendMessage(receiver) {
             const messageInput = document.querySelector(`#chat-box-${receiver} .message-input`);
             const message = messageInput.value.trim();
